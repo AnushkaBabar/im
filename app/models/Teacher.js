@@ -20,12 +20,12 @@ const TeacherSchema = mongoose.Schema({
     }
 });
 
-TeacherSchema.pre("save", async (next) => {
+TeacherSchema.pre("save", async function(next) {
     if (!this.isModified("password")) {
         return next();
     }
 
-    this.password = bcrypt.hashSync(this.password);
+    this.password = await bcrypt.hash(this.password, 10);
     next();
 });
 
