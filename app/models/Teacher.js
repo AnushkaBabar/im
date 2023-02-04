@@ -29,9 +29,4 @@ TeacherSchema.pre("save", async (next) => {
     next();
 });
 
-// TeacherSchema.methods.comparePassword = async (password) => {
-//     const isMatch = await bcrypt.compare(password, this.password)
-//     return isMatch;
-// }
-
-module.exports = mongoose.model("user", TeacherSchema);
+module.exports = mongoose.model("Teacher", TeacherSchema);

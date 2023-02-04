@@ -2,10 +2,11 @@ const express = require("express");
 const {
     postTimeslot,
     getTimeslots
-} = require("../controllers/timeslots")
+} = require("../controllers/timeslots");
+const auth = require("../middlewares/auth");
 const router = express.Router();
 
-router.post("/", postTimeslot);
-router.get("/", getTimeslots);
+router.post("/", auth, postTimeslot);
+router.get("/", auth, getTimeslots);
 
 module.exports = router;

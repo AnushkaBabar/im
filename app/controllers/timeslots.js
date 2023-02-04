@@ -2,7 +2,8 @@ const { Timeslot, theoryTimeslots, laboratoryTimeslots, conferenceTimeslots } = 
 
 const postTimeslot = async (req, res, next) => {
 	try {
-		const { classroom, date, timeslot, available, teacher, type } = req.body;
+		const { classroom, date, timeslot, available, type } = req.body;
+		const teacher = req.teacher.id;
 
 		let allowedTimeslots;
 		if (type == 'theory') {
