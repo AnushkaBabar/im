@@ -15,7 +15,7 @@ main {
 }
 
 h2 {
-    margin-top: .8rem !important;
+    /* margin-top: .8rem !important; */
     margin-bottom: .4rem;
 }
 
@@ -28,7 +28,7 @@ h2 {
 }
 
 .custom-option {
-    background-color: lightgray;
+    background-color: rgb(211, 211, 211);
     padding: .25rem;
     width: 150px;
     height: 50px;
@@ -41,12 +41,120 @@ h2 {
     color: white;
 }
 
+/* ///////////////////////////////////////////////// */
+
+.custom-select1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .25rem;
+    gap: .5rem;
+   
+}
+
+.custom-option1 {
+    background-color: lightgray;
+    padding: .25rem;
+    width: 130px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.custom-option-selected1 {
+    background-color: gray;
+    color: white;
+}
+
+.classroom-column{
+    margin: 14px 10px 10px;
+    max-width: 160px;
+    min-width: 100px;
+    padding: 10px 5px;
+    width: 130px;
+}
+
+/* ///////////////////////////////////////////////// */
+
+.custom-select2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .25rem;
+    gap: .5rem;
+
+}
+
+.custom-option2 {
+    background-color: lightgray;
+    padding: .25rem;
+    width: 170px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.custom-option-selected2 {
+    background-color: gray;
+    color: white;
+}
+
+.time-column{
+    margin: 16px 12px 12px;
+    max-width: 200px;
+    min-width: 100px;
+    padding: 10px 25px;
+    width: 180px;
+}
+
+/* ///////////////////////////////////////////////// */
+
 .hide {
     display: none;
 }
 
 .footer {
     padding: 15px;
-    position: absolute;
+    /* position: fixed-bottom; */
     bottom: 0;
 }
+
+.wmh-footer {
+    background: #152f49;
+    color: #fff;
+    padding: 10px 0px;
+    font-family: 'Open Sans',sans-serif;
+    width: 100%;
+}
+
+.wmh-mlr-90 {
+  margin: 0px 90px 0px 90px;
+}
+
+.wmh-footer .wmh-wdt-50 {
+  /* float: left; */
+  width: 100%;
+  text-align: center;
+}
+
+.wmh-plr-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wmh-footer span {
+  font-size: 14px;
+}
+
+.wmh-cleardiv {
+  clear: both;
+}
+
+.wmh-footer .tright {
+  text-align: center;
+}
+
+
+

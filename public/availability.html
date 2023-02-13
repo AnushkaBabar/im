@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>PCCOE TIMETABLE</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>INFRASTURCTURE MANAGEMENT</title>
+</head>
+
+<body>
+
+    <!-- navbar starts -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-new" href="#">INFRASTRUCTURE MANGEMENT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 space">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="availability.html">AVAILABILITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book.html">BOOK</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <main>
+        <section>
+            <!-- <h2>Class type</h2> -->
+            
+            <div data-custom-select class="custom-select">
+                <!-- <div class="row1"> -->
+                    <div data-selected="false" data-value="classroom" class="custom-option col">Classroom</div>
+                    <div data-selected="false" data-value="lab" class="custom-option col">Lab</div>
+                    <div data-selected="false" data-value="conference" class="custom-option col">Conference</div>
+                <!-- </div> -->
+            
+            </div>
+            
+
+            
+            <div>
+                <h2>Date</h2>
+                <input type="date" name="inputdate" id="inputdate"><br>
+            </div><br>
+
+            <div class="row">
+                <section class="w-50">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded h-100">
+                        <div class="card-body ">
+                            <center><h2>Class number</h2></center>
+                            <div data-custom-select1 class="custom-select1">
+                                <div class="classroom-column">
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                </div>
+                                <div class="classroom-column">
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                </div>
+                                <div class="classroom-column">
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                </div>
+                                <div class="classroom-column">
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                    <div data-selected="false" data-value="6102" class="custom-option1">6102</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="w-50">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded h-100">
+                        <div class="card-body">
+                            <center><h2>Time slots</h2></center>
+                            <div data-custom-select2 class="custom-select2">
+                            <div class="time-column">
+                                <div data-selected="false" data-value="9am-10am" class="custom-option2">8am-9am</div>
+                                <div data-selected="false" data-value="9am-10am" class="custom-option2">9am-10am</div>
+                                <div data-selected="false" data-value="9am-10am" class="custom-option2">10am-11am</div>
+                            </div>
+                            <div class="time-column">
+                                <div data-selected="false" data-value="9am-10am" class="custom-option2">11:10am-12:10pm</div>
+                                <div data-selected="false" data-value="9am-10am" class="custom-option2">12:10pm-1:10pm</div>
+                                <div data-selected="false" data-value="9am-10am" class="custom-option2">2pm-3pm</div>
+                            </div>
+                            <div class="time-column">
+                                <div data-selected="false" data-value="9am-10am" class="custom-option2">3pm-4pm</div>
+                                <div data-selected="false" data-value="9am-10am" class="custom-option2">4pm-5pm</div>
+                                <div data-selected="false" data-value="9am-10am" class="custom-option2">5pm-6pm</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <center><br><input type="button" value="Submit"></center>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer starts here -->
+    <div class="wmh-footer footer">
+        <div class="wmh-mlr-90">
+            <div class="wmh-wdt-50">
+                <div class="wmh-plr-15">
+                    <span class="tright">Copyright @ 2023 Pimpri Chinchwad College of Engineering <b>(PCCOE)</b></span>
+                </div>
+            </div>
+            <div class="wmh-wdt-50">
+                <div class="wmh-plr-15">
+                    <div class="tright">
+                        <span>Designed &amp; Developed by <a href="https://computer.pccoepune.com/"
+                                style="color:rgb(227, 224, 231);"><strong>Computer Engineering Department</strong></a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="wmh-cleardiv"></div>
+        </div>
+    </div>
+    <!-- footer ends here -->
+
+</body>
+
+</html>
